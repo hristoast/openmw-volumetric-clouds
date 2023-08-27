@@ -59,6 +59,7 @@ uniform_float cloud_density {
     step = 0.1;
     display_name = "Density";
     description = "Density of clouds, higher values gives clouds 'sharper' edges";
+    static = false;
 }
 
 uniform_float cloud_alt {
@@ -701,4 +702,5 @@ technique {
     hdr = true;
     flags = disable_underwater, disable_sunglare;
     pass_lights = true;
+    dynamic = true;
 }
